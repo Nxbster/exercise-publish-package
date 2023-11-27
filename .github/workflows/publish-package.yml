@@ -10,8 +10,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: ls
       - run: cd sample-packages
       - run: ls
+      - run: cd sample-packages
       - run: cd npm
       - run: npm ci
       - run: npm test
