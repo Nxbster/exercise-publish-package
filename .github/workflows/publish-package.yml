@@ -1,4 +1,4 @@
-Name: Publish Image
+name: Publish Image
 
 on: push
 
