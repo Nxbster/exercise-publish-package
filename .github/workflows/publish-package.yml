@@ -11,12 +11,11 @@ jobs:
         with:
           node-version: 12
       - run: ls
-      - run: cd sample-packages
-      - run: ls
-      - run: cd sample-packages
-      - run: cd npm
-      - run: npm ci
-      - run: npm test
+      - run:| 
+        cd sample-packages
+        cd npm
+        npm ci
+        npm test
 
   publish-gpr:
     needs: build
